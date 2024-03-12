@@ -14,9 +14,12 @@ public class Empleado {
     
     public static void main(String args[]){
         Empleado empleado = new Empleado(12345, "Manuela", 230, 4.936, 2.5);
-        String frase = "Codigo del empleado: "+empleado.codigo_del_empleado + "\nNombre del empleado: "+empleado.nombre+ "\nNumero de horas trabajadas al mes: "
-        +empleado.numero_de_horas_trabajadas_al_mes+ "\nValor de la hora trabajada: "+empleado.valor_hora_trabajada+ "\nPorcentaje de retencion en la fuente: "+
-        empleado.porcentaje_de_retención_en_la_fuente;
+
+        double Salario_neto = (empleado.numero_de_horas_trabajadas_al_mes*empleado.valor_hora_trabajada) - (empleado.numero_de_horas_trabajadas_al_mes*empleado.valor_hora_trabajada)*empleado.porcentaje_de_retención_en_la_fuente/100;
+        double salario_bruto = empleado.numero_de_horas_trabajadas_al_mes*empleado.valor_hora_trabajada;
+
+        String frase = "Codigo del empleado: "+empleado.codigo_del_empleado + "\nNombre del empleado: "+empleado.nombre+ "\nSalario bruto : "
+        +salario_bruto+ "\nSalario neto: "+Salario_neto;
         System.out.println(frase );
     }
     
