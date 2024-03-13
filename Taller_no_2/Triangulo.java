@@ -1,23 +1,24 @@
 public class Triangulo {
-    double Lado_triangulo;
-    public Triangulo (double lado) {
-        Lado_triangulo = lado;
-    }
+    double lado1;
+    double lado2;
+    double lado3;
+    public Triangulo(double lado1, double lado2, double lado3){
+        this.lado1 = lado1;
+        this.lado2 = lado2;
+        this.lado3 = lado3;
+    }  
 
-    public static void main (String args[]){
-        Triangulo triangulo = new Triangulo(12);
-        operaciones_triangulo(triangulo.Lado_triangulo);
-    }
-
-    public static void operaciones_triangulo (double lado){
-        double perimetro = 3*lado;
-        double valor_altura = (Math.sqrt(3)*lado)/2;
-        double area = (lado*valor_altura)/2;
-
-        String frase =  "Perimetro del triángulo: "+perimetro+ "\nValor de la altura del triángulo: "+valor_altura+ "\nArea del triángulo: "+area;
-        
-        System.out.println(frase);
+    public static void main(String args[]){
+        Triangulo triangulo = new Triangulo(3, 4, 5);
+        operaciones_triangulo(triangulo.lado1,triangulo.lado2 , triangulo.lado3);
     } 
-
-
+    
+    public static void operaciones_triangulo(double lado1, double lado2, double lado3){
+        double perimetro = lado1 + lado2 + lado3;
+        double semiperimetro = perimetro / 2;
+        double area = Math.sqrt(semiperimetro*((semiperimetro-lado1)*(semiperimetro-lado2)*(semiperimetro-lado3)));
+    
+        String frase = "Perimetro: "+ perimetro +"\n Semiperimetro: "+semiperimetro+ "\nArea: "+ area;
+        System.out.println(frase);
+    }
 }
