@@ -1,5 +1,5 @@
 public class Cuadrado {
-    int lado; // Atributo que define el lado de un cuadrado
+    int lado; 
     public Cuadrado(int lado) {
     this.lado = lado;
     }

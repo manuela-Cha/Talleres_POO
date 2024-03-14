@@ -18,6 +18,4 @@ public class Triangulo_equilatero {
         
         System.out.println(frase);
     } 
-
-
 }

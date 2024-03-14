@@ -9,7 +9,6 @@ public class Descuentos {
 
         calculo_de_descuento(valor_compra, color_bola);
     }
-
     public static void calculo_de_descuento(float valor_compra, String color_bola){
         float valor_neto_a_pagar;
         float descuento;

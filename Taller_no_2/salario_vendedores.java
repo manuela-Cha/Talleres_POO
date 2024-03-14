@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class salario_vendedores {
     public static void main (String args[]){
         Scanner scanner = new Scanner(System.in);
@@ -34,6 +33,4 @@ public class salario_vendedores {
 
         System.out.println(frase);
     }
-
-
 }
