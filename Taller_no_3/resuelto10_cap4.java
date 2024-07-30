@@ -39,24 +39,19 @@ public class resuelto10_cap4 extends JFrame{
             }
         });
         add(botonCalcular);
-
         areaResultado = new JTextArea();
         areaResultado.setEditable(false);
         add(new JScrollPane(areaResultado));
-
         setVisible(true);
 
     }
     
-    
-
     public void pago_matricula(){
         Double pago_matricula = 50000.0;
         Double patrimonio = Double.parseDouble(campoPatrimonio.getText());
         Double estrato_social = Double.parseDouble(campoEstrato.getText());
         int numero_inscripcion = Integer.parseInt(campoNumeroInscripcion.getText());
         String nombre = campoNombre.getText();
-
         try {
             if (patrimonio > 2000000 && estrato_social > 3){
                 pago_matricula = pago_matricula + 0.03*patrimonio;
@@ -72,5 +67,4 @@ public class resuelto10_cap4 extends JFrame{
     public static void main(String args[]){
         new resuelto10_cap4();
     }
-
 }

@@ -9,10 +9,8 @@ public class propuesto23_cap4 extends JFrame {
     public static void main(String args[]){
         new propuesto23_cap4();
     }
-
     private JTextField campoA, campoB, campoC;
     private JTextArea areaResultado;
-
     public propuesto23_cap4(){
         setTitle("Ecuacion");
         setSize(400, 400);
@@ -42,18 +40,13 @@ public class propuesto23_cap4 extends JFrame {
         areaResultado = new JTextArea();
         areaResultado.setEditable(false);
         add(new JScrollPane(areaResultado));
-
         setVisible(true);
-
     }
-
     public void ecuacion(){
         Double A = Double.parseDouble(campoA.getText());
         Double B = Double.parseDouble(campoB.getText());
         Double C = Double.parseDouble(campoC.getText());
-
         double discriminante = B * B - 4 * A * C;
-
         try{
             if (discriminante > 0) {
                 double x1 = (-B + Math.sqrt(discriminante)) / (2 * A);
@@ -65,8 +58,7 @@ public class propuesto23_cap4 extends JFrame {
             } else {
                 double parteReal = -B / (2 * A);
                 double parteImaginaria = Math.sqrt(-discriminante) / (2 * A);
-                areaResultado.setText("Las soluciones son x1 = " + parteReal + " + " + parteImaginaria + "i y x2 = " + parteReal + " - " + parteImaginaria + "i");
-                
+                areaResultado.setText("Las soluciones son x1 = " + parteReal + " + " + parteImaginaria + "i y x2 = " + parteReal + " - " + parteImaginaria + "i");       
             }
         }
         catch(NumberFormatException e) {

@@ -51,6 +51,7 @@ public class Taller_no_1{
         double cubo = Math.pow(numero, 3);
         String frase = "numero " + numero + " elevado al cuadrado: "+ cuadrado + ", elevado al cubo: "+ cubo + "\n----------"; 
         System.out.println(frase);
+        entrada.close();
         return frase;
     }
 
@@ -62,6 +63,7 @@ public class Taller_no_1{
         double logitud_de_circunferencia = Math.PI * (radio*2);
         String frase = "Area del circulo: "+ area_circulo + ", Longitud de la circunferencia: "+ logitud_de_circunferencia; 
         System.out.println(frase);
+        entrada.close();
         return frase;
     }
 
