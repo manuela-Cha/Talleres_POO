@@ -6,6 +6,7 @@ public class Descuentos {
         float valor_compra = scanner.nextFloat();
         System.out.println("ingrese el color de la bolita: ");
         String color_bola = scanner.next();
+        scanner.close();
 
         calculo_de_descuento(valor_compra, color_bola);
     }

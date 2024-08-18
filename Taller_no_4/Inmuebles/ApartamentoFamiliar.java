@@ -1,4 +1,4 @@
-package Inmuebles;
+package Taller_no_4.Inmuebles;
 
 public class ApartamentoFamiliar extends Apartamento {
     protected static double valorArea = 2000000;

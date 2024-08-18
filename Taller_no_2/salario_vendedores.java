@@ -15,6 +15,7 @@ public class salario_vendedores {
         Double salario_vendedores2 = scanner.nextDouble();
         System.out.println("Salario de vendedores del departamento 3: ");
         Double salario_vendedores3 = scanner.nextDouble();
+        scanner.close();
         
         Double Total_ventas = ventas_dep1+ventas_dep2+ventas_dep3;
         Double porcentaje_sobre_las_ventas = Total_ventas*0.33;

@@ -11,6 +11,7 @@ public class Mayor_numero_entero {
         System.out.println("Por favor, introduce un numero C:");
         int numeroC = scanner.nextInt();
         mayor(numeroA, numeroB, numeroC);
+        scanner.close();
     }
 
     public static void mayor(int A, int B, int C){

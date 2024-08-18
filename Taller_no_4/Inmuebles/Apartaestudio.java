@@ -1,4 +1,4 @@
-package Inmuebles;
+package Taller_no_4.Inmuebles;
 
 public class Apartaestudio extends Apartamento {
 

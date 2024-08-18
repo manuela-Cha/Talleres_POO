@@ -10,6 +10,7 @@ public class Esferas {
         Double esfera_C = scanner.nextDouble();  
         System.out.println("Peso de la esfera D: ");
         Double esfera_D = scanner.nextDouble();
+        scanner.close();
 
         String diferente = "";
         String mayor_o_menor = "";
