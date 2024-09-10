@@ -115,10 +115,9 @@ public class VentanaEsfera extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
-        // TODO add your handling code here:
+    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {
         double radio = Double.parseDouble(txtRadio.getText());
         
         Esfera esfera = new Esfera(radio);

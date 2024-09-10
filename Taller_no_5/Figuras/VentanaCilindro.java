@@ -140,14 +140,13 @@ public class VentanaCilindro extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void txtRadioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRadioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtRadioActionPerformed
+    private void txtRadioActionPerformed(java.awt.event.ActionEvent evt) {
+        
+    }
 
-    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
-        // TODO add your handling code here:
+    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {
         double radio = Double.parseDouble(txtRadio.getText());
         double altura = Double.parseDouble(txtAltura.getText());
         
