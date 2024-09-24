@@ -18,9 +18,9 @@ public abstract class Ciclista {
         return identificador;
     }
 
-    protected void setIdentificador() {
-        this.identificador = identificador;
-    }
+    //protected void setIdentificador() {
+    //    this.identificador = identificador;
+    //}
 
     protected String getNombre() {
         return nombre;
@@ -34,9 +34,9 @@ public abstract class Ciclista {
         return posiciónGeneral;
     }
 
-    protected void setPosiciónGeneral(int posiciónGeneral) {
-        posiciónGeneral = posiciónGeneral;
-    }
+    //protected void setPosiciónGeneral(int posiciónGeneral) {
+    //    posiciónGeneral = posiciónGeneral;
+    //}
 
     protected int getTiempoAcumulado() {
         return tiempoAcumulado;
