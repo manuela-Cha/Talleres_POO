@@ -15,12 +15,7 @@ class UpdateFriend {
  
         try {
  
-            // Get the name of the contact to be updated
-            // from the Command line argument
             String newName = data[0];
- 
-            // Get the number to be updated
-            // from the Command line argument
             long newNumber = Long.parseLong(data[1]);
  
             String nameNumberString;
